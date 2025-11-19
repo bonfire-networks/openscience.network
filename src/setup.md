@@ -25,7 +25,7 @@ This guide covers how to configure and deploy your own Open Science Network inst
 
 ## Environment Configuration
 
-### ORCID Application Setup
+### ORCID Application Setup (Optional)
 
 1. **Register your application** at [ORCID Developer Tools](https://orcid.org/developer-tools) (or [Sandbox](https://sandbox.orcid.org/developer-tools) for testing)
 2. **Set redirect URIs** for your instance in the ORCID app setup:
@@ -55,7 +55,7 @@ Add these variables to your Bonfire environment or `.env` file:
 ```bash
 FLAVOUR=open_science # sets Bonfire flavour
 
-# ORCID Integration (Required)
+# ORCID Integration (Optional - for importing and adding works)
 # ORCID_ENV=sandbox # uncomment if using the sandbox API
 ORCID_CLIENT_ID=your_orcid_client_id
 ORCID_CLIENT_SECRET=your_orcid_client_secret
