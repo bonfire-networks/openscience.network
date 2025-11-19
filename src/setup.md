@@ -25,7 +25,7 @@ This guide covers how to configure and deploy your own Open Science Network inst
 
 ## Environment Configuration
 
-### ORCID Application Setup (Optional)
+### ORCID Application Setup (Optional - for importing and adding works)
 
 1. **Register your application** at [ORCID Developer Tools](https://orcid.org/developer-tools) (or [Sandbox](https://sandbox.orcid.org/developer-tools) for testing)
 2. **Set redirect URIs** for your instance in the ORCID app setup:
@@ -36,7 +36,7 @@ This guide covers how to configure and deploy your own Open Science Network inst
 <!-- 4. **Set application permissions** to read public information and publication lists -->
 4. **Restart** Bonfire
 
-### Zenodo Application Setup (Optional)
+### Zenodo Application Setup (Optional - for archiving discussions)
 
 1. **Create application** at [Zenodo Developers](https://zenodo.org/account/settings/applications/) (or [Sandbox](https://sandbox.zenodo.org/account/settings/applications/) for testing)
 2. **Set redirect URIs** for your instance in the Zenodo app setup:
@@ -55,13 +55,13 @@ Add these variables to your Bonfire environment or `.env` file:
 ```bash
 FLAVOUR=open_science # sets Bonfire flavour
 
-# ORCID Integration (Optional - for importing and adding works)
+# ORCID Integration 
 # ORCID_ENV=sandbox # uncomment if using the sandbox API
 ORCID_CLIENT_ID=your_orcid_client_id
 ORCID_CLIENT_SECRET=your_orcid_client_secret
 # ORCID_WITH_MEMBER_API=yes # uncomment only if your organisation (used to create these API keys) is an ORCID member
 
-# Zenodo Integration (Optional - for archiving discussions)
+# Zenodo Integration 
 # ZENODO_ENV=sandbox # uncomment if using the sandbox API
 ZENODO_CLIENT_ID=your_zenodo_client_id
 ZENODO_CLIENT_SECRET=your_zenodo_client_secret
