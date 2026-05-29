@@ -30,7 +30,7 @@ This guide covers how to configure and deploy your own Open Science Network inst
 1. **Register your application** at [ORCID Developer Tools](https://orcid.org/developer-tools) (or [Sandbox](https://sandbox.orcid.org/developer-tools) for testing)
 2. **Set redirect URIs** for your instance in the ORCID app setup:
    ```
-   https://your-domain.org/settings/orcid/callback
+   https://your-domain.org/openid/client/orcid
    ```
 3. **Copy credentials** to your Bonfire environment or `.env` file (see example below)
 <!-- 4. **Set application permissions** to read public information and publication lists -->
@@ -41,7 +41,7 @@ This guide covers how to configure and deploy your own Open Science Network inst
 1. **Create application** at [Zenodo Developers](https://zenodo.org/account/settings/applications/) (or [Sandbox](https://sandbox.zenodo.org/account/settings/applications/) for testing)
 2. **Set redirect URIs** for your instance in the Zenodo app setup:
    ```
-   https://your-domain.org/settings/zenodo/callback
+   https://your-domain.org/oauth/client/zenodo
    ```
 3. **Copy credentials** to your Bonfire environment or `.env` file (see example below)
 4. **Restart** Bonfire
