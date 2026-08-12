@@ -5,3 +5,5 @@ _site
 !.env.example
 dashboard.html
 !dashboard.html.example
+.DS_Store
+src/.DS_Store
